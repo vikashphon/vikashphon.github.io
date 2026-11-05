@@ -1,1 +1,157 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikash Electronics | Panipat</title>
+<meta name="description" content="Vikash Electronics Panipat - New Mobile, Old Mobile, Accessories, Washing Machine, Cooler and Mobile Repairing.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#090909;color:#fff;font-family:Arial,sans-serif}
+:root{--gold:#d6ad55;--dark:#111;--muted:#aaa}
+header{padding:18px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #302719;background:#0c0c0c}
+.logo{font-size:23px;font-weight:900;color:var(--gold)}
+.logo span{color:white}
+header a,.btn{color:#111;background:var(--gold);padding:11px 17px;border-radius:7px;text-decoration:none;font-weight:bold}
+.hero{text-align:center;padding:75px 18px 65px;background:radial-gradient(ellipse at top,#47351b,#111 60%,#090909)}
+.tag{color:var(--gold);letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(34px,7vw,58px);margin:18px 0}
+h1 span{color:var(--gold)}
+.hero p{color:#ccc;line-height:1.7;max-width:600px;margin:0 auto 25px}
+.btn2{display:inline-block;padding:13px 22px;border:1px solid var(--gold);color:var(--gold);border-radius:7px;text-decoration:none;margin:5px}
+.btn2.gold{background:var(--gold);color:#111}
+section{padding:48px 5%}
+.heading{text-align:center;margin-bottom:28px}
+.heading h2{font-size:29px;color:var(--gold);margin-bottom:9px}
+.heading p{color:var(--muted)}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.category{background:#151515;border:1px solid #3a3020;border-radius:12px;padding:23px 10px;text-align:center;color:white;text-decoration:none}
+.category b{display:block;margin-top:10px}
+.category .emoji{font-size:35px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#151515;border:1px solid #332b1d;border-radius:12px;padding:22px;text-align:center}
+.card .emoji{font-size:43px}
+.card h3{margin:12px 0;color:var(--gold)}
+.card p{font-size:14px;color:#bbb;line-height:1.5;margin-bottom:15px}
+.card a{display:inline-block;background:var(--gold);color:#111;padding:10px 15px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:13px}
+.search{display:block;width:100%;max-width:450px;margin:0 auto 25px;padding:14px;border-radius:8px;border:1px solid #66532f;background:#151515;color:white}
+.info{background:#141414;border-top:1px solid #382e1d;border-bottom:1px solid #382e1d;text-align:center}
+.info p{color:#ccc;line-height:1.9}
+footer{text-align:center;padding:28px 15px;color:#999;font-size:13px}
+footer b{color:var(--gold)}
+.float{position:fixed;bottom:18px;right:16px;background:#20bd62;color:white;padding:14px 18px;border-radius:40px;text-decoration:none;font-weight:bold;box-shadow:0 4px 15px #000}
+@media(max-width:650px){
+ .categories{grid-template-columns:repeat(2,1fr)}
+ .products{grid-template-columns:repeat(2,1fr)}
+ header{padding:15px 4%}
+ .logo{font-size:19px}
+}
+@media(max-width:380px){.products{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">VIKASH <span>ELECTRONICS</span></div>
+ <a href="https://wa.me/919350260177">Contact Us</a>
+</header>
+
+<div class="hero">
+ <div class="tag">WELCOME TO VIKASH ELECTRONICS</div>
+ <h1>Technology Meets <span>Trust</span></h1>
+ <p>New Mobile, Old Mobile, Accessories, Washing Machine, Cooler aur Mobile Repairing — sab kuch ek hi jagah.</p>
+ <a class="btn2 gold" href="#products">Explore Products</a>
+ <a class="btn2" href="https://wa.me/919350260177">WhatsApp Now</a>
+</div>
+
+<section>
+ <div class="heading">
+  <h2>Our Categories</h2>
+  <p>Choose what you are looking for</p>
+ </div>
+ <div class="categories">
+  <a class="category" href="#new"><div class="emoji">📱</div><b>New Mobile</b></a>
+  <a class="category" href="#old"><div class="emoji">♻️</div><b>Old Mobile</b></a>
+  <a class="category" href="#accessories"><div class="emoji">🎧</div><b>Accessories</b></a>
+  <a class="category" href="#washing"><div class="emoji">🧺</div><b>Washing Machine</b></a>
+  <a class="category" href="#cooler"><div class="emoji">❄️</div><b>Cooler</b></a>
+  <a class="category" href="#repair"><div class="emoji">🛠️</div><b>Mobile Repairing</b></a>
+ </div>
+</section>
+
+<section id="products">
+ <div class="heading">
+  <h2>Our Products & Services</h2>
+  <p>Product ki price aur availability WhatsApp par poochhein</p>
+ </div>
+ <input class="search" id="search" placeholder="Search product or service..." oninput="filterProducts()">
+ <div class="products" id="productList">
+
+  <div class="card" id="new" data-name="new mobile smartphone phone">
+   <div class="emoji">📱</div><h3>New Mobile</h3>
+   <p>Latest smartphones aur naye mobile models.</p>
+   <a href="https://wa.me/919350260177?text=Namaste%2C%20New%20Mobile%20ki%20details%20batayein">Enquire Now</a>
+  </div>
+
+  <div class="card" id="old" data-name="old mobile exchange used phone">
+   <div class="emoji">♻️</div><h3>Old Mobile</h3>
+   <p>Purana phone bechein ya exchange ke liye poochhein.</p>
+   <a href="https://wa.me/919350260177?text=Old%20Mobile%20buy%20exchange%20ki%20details%20batayein">Enquire Now</a>
+  </div>
+
+  <div class="card" id="accessories" data-name="mobile accessories cover glass charger earphone">
+   <div class="emoji">🎧</div><h3>Accessories</h3>
+   <p>Mobile cover, glass, charger, cable aur earphones.</p>
+   <a href="https://wa.me/919350260177?text=Mobile%20Accessories%20ki%20details%20batayein">Enquire Now</a>
+  </div>
+
+  <div class="card" id="washing" data-name="washing machine">
+   <div class="emoji">🧺</div><h3>Washing Machine</h3>
+   <p>Washing machines ke models aur offers ki jankari.</p>
+   <a href="https://wa.me/919350260177?text=Washing%20Machine%20ki%20details%20batayein">Enquire Now</a>
+  </div>
+
+  <div class="card" id="cooler" data-name="cooler air cooler">
+   <div class="emoji">❄️</div><h3>Cooler</h3>
+   <p>Cooler ke models aur prices ke liye contact karein.</p>
+   <a href="https://wa.me/919350260177?text=Cooler%20ki%20details%20batayein">Enquire Now</a>
+  </div>
+
+  <div class="card" id="repair" data-name="mobile repairing repair display touch">
+   <div class="emoji">🛠️</div><h3>Mobile Repairing</h3>
+   <p>Mobile display, touch aur repairing services.</p>
+   <a href="https://wa.me/919350260177?text=Mobile%20Repairing%20ke%20liye%20contact%20karna%20hai">Enquire Now</a>
+  </div>
+
+ </div>
+</section>
+
+<section class="info">
+ <div class="heading"><h2>Visit Our Store</h2></div>
+ <p><b>Vikash Electronics</b></p>
+ <p>📍 Jatal Road, Panipat, Gas Godam se pehla</p>
+ <p>📞 9350260177</p>
+ <p>🛍️ Store Pickup Available</p>
+ <p>💳 Online Payment & Shop Payment</p>
+ <p style="margin-top:15px"><a class="btn" href="https://wa.me/919350260177">Chat on WhatsApp</a></p>
+</section>
+
+<footer>
+ <b>VIKASH ELECTRONICS</b><br><br>
+ © 2026 All Rights Reserved | Panipat, Haryana
+</footer>
+
+<a class="float" href="https://wa.me/919350260177">● WhatsApp</a>
+
+<script>
+function filterProducts(){
+ const q=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('.card').forEach(card=>{
+  card.style.display=card.dataset.name.includes(q)?'block':'none';
+ });
+}
+</script>
+</body>
+</html>
+
